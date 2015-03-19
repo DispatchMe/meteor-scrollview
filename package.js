@@ -5,6 +5,8 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
+  api.versionsFrom('1.0');
+
   api.export('ScrollView');
   api.export('TemplateSequence');
   api.export('ScrollPosition');
@@ -14,7 +16,6 @@ Package.onUse(function (api) {
     'dispatch:events-pan@0.0.3',
     'dispatch:interpolator@0.0.2',
     'reactive-var', 'templating', 'tracker',
-    'raix:handlebar-helpers',
     'underscore'
   ], 'web');
 
