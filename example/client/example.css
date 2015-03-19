@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+.container {
+  width: 100%;
+  height: 100px;
+}
+
+.item {
+  position: absolute;
+  width: 65px;
+  height: 100px;
+
+  /* Simple contents layout */
+  border: 1px solid black;
+  text-align: center;
+  line-height: 100px;
+
+}
