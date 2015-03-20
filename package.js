@@ -1,6 +1,6 @@
 Package.describe({
   name: 'dispatch:scrollview',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Fast infinite scrollview'
 });
 

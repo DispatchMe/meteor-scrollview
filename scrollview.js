@@ -149,7 +149,7 @@ _.each([
   'transform'
   ], function(name) {
   // Check if prefix is found
-  if (document.documentElement.style[name]) {
+  if (name in document.documentElement.style) {
     // Set the transform function
     Tools.transform = function(el, transform) {
       el.style[name] = transform;
