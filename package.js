@@ -5,18 +5,20 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.0');
-
-  api.export('ScrollView');
-  api.export('TemplateSequence');
-  api.export('ScrollPosition');
+  api.versionsFrom('1.2');
 
   api.use([
+    // core
+    'jquery',
+    'reactive-var',
+    'templating',
+    'tracker',
+    'underscore',
+
+    // atmosphere
     'dispatch:kernel@0.0.3',
-    'dispatch:events-pan@0.0.3',
-    'dispatch:interpolator@0.0.2',
-    'reactive-var', 'templating', 'tracker',
-    'underscore'
+    'dispatch:events-pan@0.0.4',
+    'dispatch:interpolator@0.0.2'
   ], 'web');
 
   api.addFiles([
@@ -25,6 +27,10 @@ Package.onUse(function (api) {
     'scrollview.js',
     'scrollview.api.js'
   ], 'web');
+
+  api.export('ScrollView');
+  api.export('TemplateSequence');
+  api.export('ScrollPosition');
 });
 
 Package.onTest(function (api) {
